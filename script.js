@@ -1,6 +1,6 @@
 //cherch element
-const totalElement = document.getElementById("total");
-const interviewElement = document.getElementById("interview");
+const totalEliment = document.getElementById("total");
+const interviewElement= document.getElementById("interview");
 const rejectElement = document.getElementById("reject");
 const jobsText = document.getElementById("jobs");
 
@@ -8,16 +8,15 @@ const jobsText = document.getElementById("jobs");
 //get the btn
 const btnAll = document.getElementById("btn-all-part");
 const btnInterview = document.getElementById('btn-inter-part');
-const btnReject = document.getElementById("btn-reject-part");
-
+const btnReject =document.getElementById('btn-reject-part');
 const noJob = document.getElementById("no-job");
 
 // card
 const cards = document.querySelectorAll('#card-box');
 
-let interviewCount = 0;
-let rejectCount = 0;
-totalElement.innerText = cards.length;
+let interviewCount =0
+let rejectCount = 0
+totalEliment.innerText = cards.length;
 
 
 for(const card of cards) {
@@ -42,13 +41,13 @@ for(const card of cards) {
         updateCount();
     })
 
-
+//reject btn
     rejectBtn.addEventListener('click',function(){
-        if (card.dataset.status === 'interview') {
+        if (card.dataset.status=== 'interview') {
             interviewCount--;
         }
 
-        if (card.dataset.status !== 'reject') {
+         if (card.dataset.status !== 'reject') {
             rejectCount++;
         }
         card.dataset.status = "reject";
