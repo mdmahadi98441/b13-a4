@@ -24,7 +24,7 @@ for(const card of cards) {
     const rejectBtn= card.querySelector('#reject-btn')
     const statusBtn = card.querySelector('#select');
 
-    card.dataset.status = 'all';
+    card.dataset.status = 'all'
 
     interviewBtn.addEventListener('click',function(){
 
